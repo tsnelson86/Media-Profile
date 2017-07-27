@@ -1,0 +1,279 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:0 ;
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Arial', 'Helvetic Neue', Helvetica, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+	height: 100%;
+}
+
+body{
+	position: relative;
+	padding:0;
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Arial', 'Helvetic Neue', Helvetica, sans-serif;
+	line-height: 2em;
+	color: #777777;
+	background-image: url(images/rockywall.png);
+	min-height: 100%;
+	padding-bottom: 120px;
+}
+
+header{
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 2em;
+	overflow: auto;
+}
+
+.headercontent {
+	margin: 0 auto 0 auto;
+}
+
+.name {
+	float: left;
+	height: 121px;
+	line-height: 121px;
+	padding: 0 1em 0 1em;
+	background: #4aaaa5;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+nav {
+	float: right;
+	line-height: 122px;
+	color: #B6B6B4;
+	padding-right: 1em;
+	font-weight: bold;
+}
+
+section {
+	margin: 0 auto 0 auto;
+}
+
+summary {
+	float: left;
+	overflow: auto;
+	margin-bottom: 1em;
+	width: 839px;
+	background: #ffffff;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	border: 1px solid #dddddd;
+	margin-right: 1em;
+}
+
+.page {
+	color: #4aaaa5;
+	padding: 0 0 1em 0;
+	font-size: 2em;
+	font-weight: bold;
+	border-bottom: 3px solid #cccccc;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#picture {
+	float: left;
+	margin: 0 2em 2em 0;
+	max-width: 100% ;
+	height: auto; 
+}
+
+aside {
+	float: left;
+	overflow: auto;
+	width: 325px;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	background: #ffffff;
+	text-align: center;
+	border: 1px solid #dddddd;
+	margin-left: 1em;
+}
+
+.logos {
+	display: inline-block;
+	padding-right: .5em;
+	padding-left: .5em;
+	padding-top: 1em;
+}
+
+.connectheader {
+	color: #4aaaa5;
+	padding: 0 0 1em 0;
+	border-bottom: 2px solid #cccccc;
+	margin-bottom: 1em;
+	margin-top: 0px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.25em;
+}
+
+.connect{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #777777;
+}
+
+a:visited {
+	color: #5E7F7E;
+}
+
+a:hover {
+	color: #6FFFF7;
+}
+
+a:active {
+	color: #BBFFFB;
+}
+
+footer{
+	background-color: #666666 ;
+	text-align: center ;
+	line-height: 100px;
+	width: 100%;
+	height: 100px;
+	color: #B6B6B4 ;
+	border-top: 10px solid #4aaaa5;
+	font-size: .7em;
+	margin-top: 1em;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+form {
+	margin: 0;
+}
+
+.inputs {
+	color: #dddddd;
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+textarea {
+	color: #dddddd;
+	padding: 5px;
+	width: 100%;
+	height: 250px;
+	border-color: #dddddd;
+}
+
+.submit {
+	color: #ffffff;
+	padding: 10px 25px;
+	background: #4aaaa5;
+	border: none;
+}
+
+.submit {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.submit:hover {
+    background-color: #5E7F7E;
+    color: white;
+}
+
+.portfolioimgs {
+	position: relative;
+	z-index: 1;
+	margin: 50px;
+	display: inline-block;
+}
+
+span {
+	position: absolute;
+	bottom: 25px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	z-index: 10;
+	font-size: 1.1em;
+	padding: .75em;
+}
+
+@media screen and (min-width: 1200px){
+	html {
+		max-width: 1800px
+	}
+	.headercontent {
+		max-width: 1200px;
+	}
+	section {
+		max-width: 1200px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+	html {
+		max-width: 1200px
+	}
+	.headercontent {
+		max-width: 840px;
+	}
+	section {
+		max-width: 840px;
+		overflow: auto;
+	}
+	summary {
+		max-width: 100%;
+	}
+	aside {
+		margin-left: 0px;
+		display: block;
+		margin-left: 25%;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	html {
+		max-width: 768px
+	}
+	.headercontent {
+		max-width: 400px;
+	}
+	summary {
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	section {
+		max-width: 400px;
+	}
+	aside {
+		max-width: 400px;
+		margin-top: 20px;
+		margin-left: 0px;
+		width: 100%
+	}
+}
